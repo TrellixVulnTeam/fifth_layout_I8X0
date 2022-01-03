@@ -1,5 +1,10 @@
 @use "sass:math";
 @import "mixins";
+@import url(/node_modules/bootstrap/scss/_mixins.scss);
+@import url(/node_modules/bootstrap/scss/_variables.scss);
+@import url(/node_modules/bootstrap/scss/mixins/_breakpoints.scss);
+@import url(/node_modules/bootstrap/scss/mixins/_container.scss);
+
 //</МИКСИНЫ>===============================================================================================
 
 //<ШРИФТЫ>===============================================================================================
@@ -176,7 +181,7 @@ body {
         white-space: nowrap;
         display: flex;
         justify-content: center;
-        margin: 120px 0 0 320px;
+        margin: 120px 0 0 318px;
         color: #ffffff;
         font-size: 40px;
         font-weight: 700;
@@ -190,13 +195,13 @@ body {
         margin: 0px 0px 0 0px;
         .services__desription-text {
             width: 603px;
-            margin: 193px 0 0 270px;
+            margin: 193px 0 0 253px;
             height: 45px;
             color: #ffffff;
             font-size: 18px;
             line-height: 26px;
             text-align: center;
-            letter-spacing: 0.36px;
+            letter-spacing: 0.39px;
         }
     }
     .services__items {
@@ -204,10 +209,23 @@ body {
         .services__items-item {
             margin: 0px 0px 0px 0px;
         }
-        .item__img {
-            margin: 0 0 0 100px;
+        .item__img1 {
+            margin: 8px 0 0 85px;
         }
-        .item__name {
+        .item__img2 {
+            margin: 4px 0 0 93px;
+        }
+        .item__img3 {
+            margin: 8px 0 0 42px;
+        }
+        .item__img4 {
+            margin: 4px 0 0 68px;
+        }
+        .item__name1,
+        .item__name2,
+        .item__name3,
+        .item__name4 {
+            position: absolute;
             margin: 62px 0 0 72px;
             white-space: nowrap;
             color: #ffffff;
@@ -218,13 +236,45 @@ body {
             text-transform: uppercase;
             letter-spacing: 0.48px;
         }
-        .item__description {
+        .item__name1 {
+            margin: 62px 0 0 73px;
+        }
+        .item__name2 {
+            margin: 57px 0 0 85px;
+        }
+        .item__name3 {
+            margin: 59px 0 0 42px;
+        }
+        .item__name4 {
+            margin: 56px 0 0 27px;
+        }
+        .item__description1,
+        .item__description2,
+        .item__description3,
+        .item__description4 {
             color: #ffffff;
             font-size: 16px;
             font-weight: 300;
             line-height: 24px;
             text-align: center;
             letter-spacing: 0.32px;
+        }
+        .item__description1 {
+            // position: absolute;
+            margin: 100px 0 0 26px;
+            width: 222px;
+        }
+        .item__description2 {
+            width: 183px;
+            margin: 98px 0 0 37px;
+        }
+        .item__description3 {
+            width: 197px;
+            margin: 98px 0 0 27px;
+        }
+        .item__description4 {
+            width: 199px;
+            margin: 95px 0 0 24px;
         }
     }
 }
@@ -256,8 +306,8 @@ body {
         letter-spacing: -0.06px;
     }
     .team__slider {
-        width: 1100px;
         position: absolute;
+        width: 1100px;
         top: 295px;
         .slider__item {
             display: flex;
@@ -539,6 +589,9 @@ body {
                 position: absolute;
                 left: 178px;
             }
+        }
+        .project1-img &:hover .project2-img {
+            cursor: pointer;
         }
     }
     .portfolio__button {
@@ -862,6 +915,228 @@ body {
             height: 10px;
             background: #17c2a4;
             border-radius: 50%;
+        }
+    }
+}
+// @include media-breakpoint-up(xs) {
+//}
+// @include media-breakpoint-up($sm) {
+// }
+// @include media-breakpoint-up($md) {
+// }
+// @include media-breakpoint-up($lg) {
+// }
+// @include media-breakpoint-up($xl) {
+// }
+
+// // Example usage:
+// @include media-breakpoint-up(sm) {
+//     .some-class {
+//         display: block;
+//     }
+// }
+@media (max-width: 1199px) {
+    .services {
+        height: 1000px;
+
+        .services__title {
+            margin: 0 0 0 -80px;
+            .skills__category {
+                right: 105px;
+                padding: 0 0 0 10px;
+            }
+            .category__graphic,
+            .category__html,
+            .category__ui,
+            .category__web {
+                margin: 0 0 0 -40px;
+            }
+            .services__items {
+                .services__items-item {
+                    padding: 30px 0 0 0;
+                }
+            }
+        }
+        .services__desription {
+            position: absolute;
+            right: 0;
+            margin: 193px 0px 0 0px;
+        }
+    }
+}
+@media (max-width: 1129px) {
+    .skills {
+        height: 900px;
+        .category__ui {
+            margin: 50px 0 0 10px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .welcome__text-text {
+        margin: 86px 0px 0 -85px;
+        font-size: 40px;
+    }
+    .services {
+        .services__title {
+            display: flex;
+            margin: 0px 0px 0 -30px;
+        }
+        .services__description {
+            margin: 0 100px 0 0;
+        }
+        .services__items {
+            margin: 100px 0 0 60px;
+            // padding: 0px 0 30px 0;
+        }
+    }
+}
+@media (max-width: 979px) {
+    .skills {
+        .category__graphic {
+            margin: -20px 0 0 10px;
+        }
+    }
+}
+@media (max-width: 900px) {
+    .welcome__text-text {
+        margin: 86px 0px 0 -55px;
+        font-size: 37px;
+    }
+    .skills {
+        .skills__category {
+            margin: 325px 0 0 160px;
+        }
+        .category__graphic {
+            margin: 50px 0 0 10px;
+        }
+    }
+}
+@media (max-width: 820px) {
+    .welcome__text-text {
+        margin: 86px 0px 0 -25px;
+        font-size: 35px;
+    }
+    .skills {
+        .skills__category {
+            margin: 325px 0 0 150px;
+        }
+    }
+}
+@media (max-width: 795px) {
+    .skills {
+        .skills__category {
+            margin: 325px 0 0 124px;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .welcome__text-text {
+        margin: 26px 0px 0 45px;
+        width: 600px;
+    }
+    .welcome__block-button {
+        margin: 140px auto;
+    }
+    .skills {
+        .skills__category {
+            left: 50px;
+            .category__web {
+                width: 100px;
+                .category__web-title {
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+    .services {
+        .services__title {
+            margin: 0px 0px 0 -260px;
+        }
+        .services__description {
+            width: 700px;
+            left: 0;
+            margin: 0 0px 0 -210px;
+        }
+        .services__items {
+            width: 600px;
+            margin: 100px 0px 0 -35px;
+        }
+    }
+}
+@media (max-width: 750px) {
+    .welcome__text-text {
+        margin: 26px 0px 0 -40px;
+        width: 600px;
+    }
+    .welcome__block-button {
+        margin: 140px auto;
+    }
+    .skills {
+        .skills__category {
+            margin: 325px 0 0 95px;
+        }
+        .category__ui {
+            margin: 50px 0 0 -10px;
+        }
+    }
+}
+@media (max-width: 580px) {
+    .welcome__text-text {
+        margin: 26px 0px 0 70px;
+        width: 400px;
+    }
+    .services {
+        height: 1600px;
+        display: flex;
+        flex-direction: column;
+        .services__title {
+            font-size: 26px;
+            margin: 0 0 0 -300px;
+        }
+        .services__items {
+            width: 450px;
+            margin: 100px 0 0 120px;
+            .services__items-item {
+            }
+        }
+    }
+}
+@media (max-width: 550px) {
+    .services {
+        height: 1600px;
+        .services__title {
+            width: 200px;
+            font-size: 30px;
+            margin: 0 0px 0 0px;
+        }
+        .services__description {
+            margin: 0 0 0 -140px;
+            width: 560px;
+        }
+        .services__items {
+            width: 450px;
+            margin: 100px 0 0 120px;
+            .services__items-item {
+            }
+        }
+    }
+}
+@media (max-width: 500px) {
+    .welcome__text-text {
+        margin: 26px auto;
+        width: 400px;
+    }
+    .services {
+        .services__items {
+            margin: 100px 0 0 80px;
+        }
+    }
+}
+@media (max-width: 400px) {
+    .services {
+        .services__items {
+            margin: 100px 0 0 30px;
         }
     }
 }
