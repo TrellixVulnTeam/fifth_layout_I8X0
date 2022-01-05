@@ -48,58 +48,69 @@ $(document).ready(function () {
 // });
 
 
-var scrolled;
-window.onscroll = function () {
-    scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    if (scrolled > 100) {
-        $(".header").css({
-            "background": "#87509c"
-        })
-    }
-    if (scrolled > 50) {
-        $(".header").css({
-            "height": "100px",
+// var scrolled;
+// window.onscroll = function () {
+//     scrolled = window.pageYOffset || document.documentElement.scrollTop;
+//     if (scrolled > 100) {
+//         $(".header").css({
+//             "background": "#87509c"
+//         })
+//     }
+//     if (scrolled > 50) {
+//         $(".header").css({
+//             "height": "100px",
 
-        })
-        $(".header-menu").css({
-            "padding-top": "25px",
-            "color": "#000",
+//         })
+//         $(".header-menu").css({
+//             "padding-top": "25px",
+//             "color": "#000",
 
-        })
+//         })
 
-    }
+//     }
 
-    if (scrolled < 50) {
-        $(".header").css({
-            "height": "144px",
+//     if (scrolled < 50) {
+//         $(".header").css({
+//             "height": "144px",
 
-        })
-    }
-    if (scrolled > 460) {
-        $(".header").css({ "background": "#17c2a4" })
-        $(".navbar-nav").css({
-            "color": "black",
+//         })
+//     }
+//     if (scrolled > 460) {
+//         $(".header").css({ "background": "#17c2a4" })
+//         $(".navbar-nav").css({
+//             "color": "black",
 
-        })
-    }
-    if (scrolled > 1270) {
-        $(".header").css({
-            "background": "#e7f1f8",
-        })
-    }
+//         })
+//     }
+//     if (scrolled > 1270) {
+//         $(".header").css({
+//             "background": "#e7f1f8",
+//         })
+//     }
 
-    if (scrolled > 2790) {
-        $(".header").css({ "background": "#ffdd99" })
-    }
-    if (scrolled > 4230) {
-        $(".header").css({ "background": "#d74680" })
-    }
-    if (scrolled > 5100) {
-        $(".header").css({ "background": "#3c5499" })
-    }
+//     if (scrolled > 2790) {
+//         $(".header").css({ "background": "#ffdd99" })
+//     }
+//     if (scrolled > 4230) {
+//         $(".header").css({ "background": "#d74680" })
+//     }
+//     if (scrolled > 5100) {
+//         $(".header").css({ "background": "#3c5499" })
+//     }
 
-}
-const mediaQuery = window.matchMedia('( max-width:1200px )')
-if (mediaQuery.matches) {
+// }
+// // const mediaQuery = window.matchMedia(' max-width: 992px ')
+// // if (mediaQuery.matches && scrolled > 100) {
+// //     $(".header").css({
+// //         "height": "100px",
+// //         "background": "#87509c"
+// //     })
 
-}
+
+// // }
+// if (window.matchMedia("(max-width: 992px)").matches) {
+//     $(".header").css({ "background": "#ffdd99" })
+
+// } else {
+//     /* the viewport is less than 400 pixels wide */
+// }
