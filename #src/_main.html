@@ -83,7 +83,7 @@
                     </p>
                 </div>
 
-                <div class="team__slider">
+                <div class="team__slider col-md-12 col-sm-12 col-xs-4 justify-content-sm-center">
                     <!-- <div class="row"> -->
 
                     <div class="slider__item">
@@ -297,6 +297,7 @@
                     <p class="">Our clients love us!
                 </div>
                 </p>
+
                 <div class="about__slider">
                     <div class="slider__item">
                         <div class="item__img1">
@@ -312,7 +313,7 @@
                             CEO of Pinterest
                         </div>
                     </div>
-                    <div class="slider__item">
+                    <div class="slider__item ">
                         <div class="item__img2">
                         </div>
                         <div class="item__text2">
@@ -329,7 +330,7 @@
                             Founder of Instagram
                         </div>
                     </div>
-                    <div class="slider__item">
+                    <div class="slider__item ">
                         <div class="item__img3">
                         </div>
                         <div class="item__text3">
@@ -346,73 +347,7 @@
                             Lead Designer at Behance
                         </div>
                     </div>
-                    <div class="slider__item">
-                        <div class="item__img4">
-                        </div>
-                        <div class="item__text4">
-                            <p class="">“Phasellus non purus vel arcu tempor commodo. Fusce semper, purus vel luctus
-                                molestie, risus sem cursus neque.”
-
-
-                            </p>
-                        </div>
-                        <span class="item__name4">EMMA STONE
-
-                        </span>
-                        <div class="item__proffession4">
-                            Co-Founder of Shazam
-
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="item__img1">
-                        </div>
-                        <div class="item__text1">
-                            <p class="">“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas
-                                fringilla urna eu nisl scelerisque.”
-                            </p>
-                        </div>
-                        <span class="item__name1">Chanel Iman
-                        </span>
-                        <div class="item__proffession1">
-                            CEO of Pinterest
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="item__img2">
-                        </div>
-                        <div class="item__text2">
-                            <p class="">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum
-                                facilisis porta.”
-
-
-                            </p>
-                        </div>
-                        <span class="item__name2">ADRIANA LIMA
-
-                        </span>
-                        <div class="item__proffession2">
-                            Founder of Instagram
-                        </div>
-                    </div>
-                    <div class="slider__item">
-                        <div class="item__img3">
-                        </div>
-                        <div class="item__text3">
-                            <p class="">“Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum
-                                facilisis porta.”
-
-
-                            </p>
-                        </div>
-                        <span class="item__name3">ANNE HATHAWAY
-
-                        </span>
-                        <div class="item__proffession3">
-                            Lead Designer at Behance
-                        </div>
-                    </div>
-                    <div class="slider__item">
+                    <div class="slider__item ">
                         <div class="item__img4">
                         </div>
                         <div class="item__text4">
@@ -446,23 +381,31 @@
                     </p>
                 </div>
                 <div class="contact__form">
+                    <div class="form-wrapper ">
+                        <form action="#" method="post" id="form" class="feedback-form">
+                            <div class="form-items ">
+                                <label for="formName" class="formlabel labelname"></label>
+                                <input id="formName" type="text" name="name" class="form__input  input__name"
+                                    placeholder="Your name *">
+                            </div>
 
-                    <form class="row contact__form-form">
-                        <div class="col-md-5 form-name">
-                            <label for="validationCustom01" class="form-label">First name</label>
-                            <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                        </div>
-                        <div class="col-md-5">
-                            <label for="validationCustom01" class="form-label">Email</label>
-                            <input type="text" class="form-control" id="" value="Email" required>
+                            <div class="form-items">
+                                <label for="formEmail" class="formlabel"></label>
+                                <input id="formEmail" type="text" name="email" class="form__input input__email"
+                                    id="email" placeholder="Your email *">
+                            </div>
+                            <div class="form-items ">
+                                <textarea name="" id="" class="form__message" placeholder="Your message *"
+                                    required="1"></textarea>
+                            </div>
 
-                        </div>
-                        <div class="col">
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control form-message" id="exampleFormControlTextarea1" rows="3"
-                                value="">Your message </textarea>
-                        </div>
-                    </form>
+                        </form>
+                        <a href="#">
+                            <div class="form__button">
+                                <a href="#" class="button-link">send message</a>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,31 +4,48 @@ $(document).ready(function () {
         // slidesToScroll: 2,
         arrows: false,
         responsive: [{
+            breakpoint: 992,
+            settings: {
+                dots: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+            }
+        },
+        {
             breakpoint: 768,
             settings: {
                 dots: true,
                 slidesToShow: 2,
+                slidesToScroll: 2,
             }
-        }]
-    });
-});
-
-$(document).ready(function () {
-    $('.about__slider').slick({
-        rows: 2,
-        slidesPerRow: 2,
-        dots: true,
-        arrows: false,
-        speed: 1500,
-        responsive: [{
-            breakpoint: 768,
+        },
+        {
+            breakpoint: 576,
             settings: {
-                slidesPerRow: 2,
-
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
             }
         }]
     });
 });
+
+// $(document).ready(function () {
+//     $('.about__slider').slick({
+//         rows: 2,
+//         slidesPerRow: 2,
+//         dots: true,
+//         arrows: false,
+//         speed: 1500,
+//         responsive: [{
+//             breakpoint: 992,
+//             settings: {
+//                 rows: 2,
+//                 slidesPerRow: 1,
+//             }
+//         }]
+//     });
+// });
 
 
 var scrolled;
@@ -82,8 +99,7 @@ window.onscroll = function () {
     }
 
 }
-// Создаем медиа условие, проверяющее viewports на ширину не менее 768 пикселей.
-const mediaQuery = window.matchMedia('(max-width: 768px)')
-if (mediaQuery.matches && scrolled > 5630) {
-    $(".header").css({ "background": "#d74680" })
+const mediaQuery = window.matchMedia('( max-width:1200px )')
+if (mediaQuery.matches) {
+
 }
