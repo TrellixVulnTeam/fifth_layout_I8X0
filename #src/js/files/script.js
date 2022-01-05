@@ -48,26 +48,26 @@ $(document).ready(function () {
 // });
 
 
-// var scrolled;
-// window.onscroll = function () {
-//     scrolled = window.pageYOffset || document.documentElement.scrollTop;
-//     if (scrolled > 100) {
-//         $(".header").css({
-//             "background": "#87509c"
-//         })
-//     }
-//     if (scrolled > 50) {
-//         $(".header").css({
-//             "height": "100px",
+//var scrolled;
+//window.onscroll = function () {
+    //scrolled = window.pageYOffset || document.documentElement.scrollTop;
+    //if (scrolled > 100) {
+    //   $(".header").css({
+    //        "background": "#87509c"
+    //      })
+    //    }
+  //  if (scrolled > 50) {
+    //    $(".header").css({
+    //        "height": "100px"
 
-//         })
-//         $(".header-menu").css({
-//             "padding-top": "25px",
-//             "color": "#000",
+//        })
+        //         $(".header-menu").css({
+        //             "padding-top": "25px",
+        //             "color": "#000",
+    
+    //})
 
-//         })
-
-//     }
+//}
 
 //     if (scrolled < 50) {
 //         $(".header").css({

@@ -32,19 +32,18 @@ header {
         .header__menu {
             display: none;
             &._active {
-                margin: 0 0 0 -100px;
                 display: block;
-                padding: 200px 500px 0 500px;
-                background: rgba(255, 255, 255, 0.9);
+                width: 1000px;
+                margin: -100px -100px -1000px -100px;
+                background: rgba(118, 45, 45, 0.9);
                 a {
                     z-index: 10;
                     display: flex;
                     justify-content: center;
                     align-content: center;
-                    height: 100%;
                     width: 80px;
-                    margin: 50px 0px 0 -100px;
-                    color: #87509c;
+                    margin: 50px auto;
+                    color: #fff;
                 }
             }
         }

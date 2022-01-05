@@ -794,7 +794,6 @@ body {
         position: absolute;
         display: flex;
         width: 900px;
-        flex-direction: row;
         margin: 260px 0 0 0px;
 
         .formlabel {
@@ -836,7 +835,7 @@ body {
             background-color: #273a71;
             border: none;
             color: #fff;
-            padding: 0 0 0 30px;
+            padding: 20px 0 0 30px;
             border-radius: 4px;
             &::placeholder {
                 font-size: 18px;
