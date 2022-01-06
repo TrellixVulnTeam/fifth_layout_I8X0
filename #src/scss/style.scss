@@ -1,31 +1,11 @@
 @use "sass:math";
 @import "mixins";
-@import url(/node_modules/bootstrap/scss/_mixins.scss);
-@import url(/node_modules/bootstrap/scss/_variables.scss);
-@import url(/node_modules/bootstrap/scss/mixins/_breakpoints.scss);
-@import url(/node_modules/bootstrap/scss/mixins/_container.scss);
 
-//</МИКСИНЫ>===============================================================================================
-
-//<ШРИФТЫ>===============================================================================================
-
-//<Подключаем шрифты>=======================================================================================
-//&display=swap&subset=cyrillic-ext
 @import "fonts";
-//</Подключаем шрифты>=======================================================================================
 
-//<Иконочные шрифты>==========================================================================================
-//@import "icons";
-//</Иконочные шрифты>==========================================================================================
-
-//<Шрифт по умолчанию>==========================================================================================
 $fontFamily: "Titillium Web";
 $fontSize: 16;
-//</Шрифт по умолчанию>==========================================================================================
 
-//</ШРИФТЫ>=======================================================================================================
-
-//<ПЕРЕМЕННЫЕ>==========================================================================================================
 $minWidth: 320;
 $maxWidth: 1440;
 $maxWidthContainer: 1140;
@@ -36,9 +16,6 @@ $md4: 479.98;
 
 $mainColor: #000;
 
-//</ПЕРЕМЕННЫЕ>===========================================================================================================
-
-//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
 body {
     overflow-x: hidden;
@@ -47,9 +24,6 @@ body {
         overflow: hidden;
     }
 }
-//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
-
-//<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
     width: 100%;
     min-height: 100%;
@@ -61,47 +35,12 @@ body {
     &._loaded {
     }
 }
-//</ОБОЛОЧКА>===========================================================================================================
 
-//<ОСНОВНАЯ СЕТКА>===========================================================================================================
-// ._container {
-//     max-width: $maxWidthContainer + 10px;
-//     margin: 0 auto;
-//     @media (max-width: $md1 + 1px) {
-//         max-width: 970px;
-//     }
-//     @media (max-width: $md2+ 1px) {
-//         max-width: 750px;
-//     }
-//     @media (max-width: $md3+1px) {
-//         max-width: none;
-//         padding: 0 10px;
-//     }
-// }
-//</ОСНОВНАЯ СЕТКА>===========================================================================================================
-
-//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-// @import "forms";
-// @import "ui";
-//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
-
-//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-//@import "datepicker";
-//@import "lightgallery";
-//@import "pagging";
-// @import "popup";
 @import "header";
 @import "footer";
-// @import "home";
-//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-
-//<ОСНОВНОЙ БЛОК>====================================================================================================
 .page {
     flex: 1 1 auto;
 }
-//===================================================================================================================================
-
-//</ОСНОВНОЙ БЛОК>====================================================================================================
 body {
     background: #fff;
     .wrapper {
@@ -143,7 +82,6 @@ body {
     display: flex;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    // border-radius: 5px;
     margin: 90px auto;
     justify-content: center;
     box-shadow: 0 3px #c86a40;
@@ -910,60 +848,13 @@ body {
     }
 }
 
-/* Слайдер */
-.slick-slider {
-}
-/* Слайдер запущен */
-.slick-slider.slick-initialized {
-}
-/* Слайдер с точками */
-.slick-slider.slick-dotted {
-}
-/* Ограничивающая оболочка */
+
 .slick-list {
     overflow: hidden;
 }
 /* Лента слайдов */
 .slick-track {
     display: flex;
-}
-/* Слайд */
-.slick-slide {
-}
-/* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
-/* Слайд основной */
-.slick-slide.slick-current {
-}
-/* Слайд по центру */
-.slick-slide.slick-center {
-}
-/* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
-/* Стрелка */
-.slick-arrow {
-}
-/* Стрелка влево */
-.slick-arrow.slick-prev {
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-}
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-}
-/* Точки (булиты) */
-.slick-dots {
-}
-.slick-dots li {
-}
-/* Активная точка */
-.slick-dots li.slick-active {
-}
-/* Элемент точки */
-.slick-dots li button {
 }
 
 .team__slider {
@@ -1022,23 +913,7 @@ body {
         }
     }
 }
-// @include media-breakpoint-up(xs) {
-//}
-// @include media-breakpoint-up($sm) {
-// }
-// @include media-breakpoint-up($md) {
-// }
-// @include media-breakpoint-up($lg) {
-// }
-// @include media-breakpoint-up($xl) {
-// }
 
-// // Example usage:
-// @include media-breakpoint-up(sm) {
-//     .some-class {
-//         display: block;
-//     }
-// }
 @media (max-width: 1200px) {
     .services {
         height: 800px;
@@ -1125,7 +1000,6 @@ body {
         }
         .about__slider {
             margin-left: -80px;
-            // width: 1250px;
             .item__text1 {
                 margin: -20px 0 0 50px;
             }
@@ -1160,9 +1034,7 @@ body {
             .portfolio__project4 {
                 margin: 100px 0 0 -20px;
             }
-            // .portfolio__project3 {
-            //     margin: 100px 0 0 70px;
-            // }
+
             img {
                 width: 540px;
                 margin: 0 0 0 -40px;
@@ -1177,7 +1049,6 @@ body {
             margin-left: 30px;
         }
         .form-wrapper {
-            margin: 260px 0px 0 -80px;
         }
     }
 }
@@ -1296,11 +1167,32 @@ body {
         }
     }
     .team {
+        h2 {
+            margin-left: 80px;
+        }
         .team__slider {
+            margin-left: 30px;
             padding: 0 -50px 0 0px;
             .slider__item {
                 width: 200px;
             }
+        }
+    }
+    .skills {
+        h3 {
+            position: absolute;
+            left: 10px;
+        }
+
+        .skills__category {
+            position: absolute;
+            width: 900px;
+            left: 10px;
+        }
+        .skills__desc {
+            margin: 190px 0 0 0px;
+            position: absolute;
+            left: 20px;
         }
     }
     .about {
@@ -1411,37 +1303,35 @@ body {
             margin: 300px 0 0 -40px;
         }
     }
-    .skills {
+
+    .contact {
         h3 {
-            margin-left: 180px;
+            margin-left: 220px;
         }
-        .skills__category {
-            display: flex;
-            flex-direction: row;
-            width: 900px;
-            margin-left: 40px;
+        .contact__desc {
+            margin-left: -60px;
         }
-        .skills__desc {
-            margin: 190px 0 0 24px;
+        .form-wrapper {
+            margin: 260px 0px 0 -210px;
         }
     }
 }
 
-.contact {
-    h3 {
-        margin-left: 220px;
-    }
-    .contact__desc {
-        margin-left: -60px;
-    }
-    .form-wrapper {
-        margin: 260px 0px 0 -210px;
-    }
-}
 @media (max-width: 979px) {
     .skills {
         .category__graphic {
             margin: -20px 0 0 10px;
+        }
+    }
+}
+@media (max-width: 940px) {
+    .skills {
+        .skills__category {
+            left: 130px;
+            width: 700px;
+            .category__graphic {
+                margin: 55px 0 0 0;
+            }
         }
     }
 }
@@ -1527,16 +1417,16 @@ body {
     }
     .skills {
         h3 {
-            margin-left: 100px;
+            margin-left: 200px;
         }
         .skills__category {
-            display: flex;
-            flex-direction: row;
             width: 700px;
-            margin-left: -20px;
+            left: 40px;
         }
         .skills__desc {
-            margin: 190px 0 0 -44px;
+            margin: 190px 0 0 0px;
+            position: absolute;
+            left: -50px;
         }
         .category__graphic {
             margin-top: 40px;
@@ -1556,10 +1446,12 @@ body {
     }
     .team {
         .team__title {
-            margin: 0px 0 0 -290px;
+            margin: 0px 0 0 -420px;
         }
         .team__description {
-            margin: 200px 0 0 -80px;
+            position: absolute;
+            margin: 200px 0 0 0px;
+            left: -90px;
         }
         .team__slider {
             margin: 0 0px 0 -83px;
@@ -1697,12 +1589,12 @@ body {
     }
     .team {
         .team__title {
-            margin: 0px 0 0 -310px;
+            margin: 0px 0 0 -410px;
         }
         .team__description {
             width: 600px;
-
-            margin: 200px 0 0 -50px;
+            left: -130px;
+            margin: 200px 0 0 -100px;
         }
         .team__slider {
             margin: 0 0px 0 -83px;
@@ -1723,16 +1615,30 @@ body {
         }
     }
 }
+@media (max-width: 660px) {
+    .skills {
+        h3 {
+            left: -60px;
+        }
+        .skills__desc {
+            left: -110px;
+        }
+        .skills__category {
+            left: -10px;
+        }
+    }
+}
 @media (max-width: 620px) {
     .team {
         h2 {
             width: 400px;
-            margin-left: 320px;
+            left: -300px;
         }
         .team__description {
             width: 500px;
 
             margin: 200px 0 0 -30px;
+            left: -110px;
         }
         .team__slider {
             margin: 0 0px 0 -83px;
@@ -1765,15 +1671,16 @@ body {
     }
     .skills {
         h3 {
-            margin-left: 70px;
+            left: -80px;
         }
         .skills__desc {
             width: 400px;
-            margin-left: 34px;
+            left: -64px;
         }
         height: 1350px;
         .skills__category {
-            margin: 300px 0 0 140px;
+            margin: 300px 0 0 0px;
+            left: 130px;
             width: 150px;
         }
         .category__graphic,
@@ -1787,6 +1694,12 @@ body {
         }
     }
     .team {
+        .team__title {
+            left: -330px;
+        }
+        .team__description {
+            left: -150px;
+        }
         .team__slider {
             .slider__item {
                 width: 230px;
@@ -1864,7 +1777,7 @@ body {
             white-space: pre-line;
             width: 440px;
 
-            margin: -50px 0px 0 320px;
+            margin: 100px 0px 0 320px;
         }
         .services__description {
             margin: 0 0 0 -180px;
@@ -1920,6 +1833,12 @@ body {
         }
         .about__desc {
             margin-left: 120px;
+        }
+    }
+    .team {
+        .team__title {
+            position: absolute;
+            left: 360px;
         }
     }
 }
@@ -1992,11 +1911,14 @@ body {
     .skills {
         h3 {
             font-size: 35px;
-            margin-left: 43px;
+            left: -123px;
         }
         .skills__desc {
             width: 300px;
-            margin-left: 44px;
+            left: -74px;
+        }
+        .skills__category {
+            left: 60px;
         }
     }
     .about {
@@ -2068,7 +1990,8 @@ body {
 @media (max-width: 400px) {
     .services {
         .services__title {
-            margin: 30px 0px 0 20px;
+            margin: 0px 0px 0 -300px;
+            position: absolute;
         }
         .services__items {
             margin: 100px 0 0 30px;
@@ -2203,7 +2126,7 @@ body {
     .team {
         .team__title {
             width: 300px;
-            margin-left: -350px;
+            left: 320px;
         }
         .team__description {
             margin-left: -4px;
@@ -2211,7 +2134,7 @@ body {
         .team__slider {
             .slider__item {
                 width: 230px;
-                margin: 0 0 0 110px;
+                margin: 0 0 0 80px;
             }
             .slick-dots {
                 position: absolute;
@@ -2223,14 +2146,14 @@ body {
     .skills {
         h3 {
             font-size: 35px;
-            margin-left: 23px;
+            left: -166px;
         }
         .skills__desc {
             width: 300px;
-            margin-left: 14px;
+            left: -124px;
         }
         .skills__category {
-            margin-left: 90px;
+            left: 40px;
         }
     }
     .about {
@@ -2245,6 +2168,11 @@ body {
         }
         .about__desc {
             margin-left: 80px;
+        }
+    }
+    .services {
+        .services__items {
+            margin-left: 60px;
         }
     }
 }
@@ -2327,7 +2255,7 @@ body {
     }
     .services {
         .services__title {
-            margin: 30px 0px 0 5px;
+            margin: 180px 0px 0 -5px;
         }
         .services__items {
             margin: 100px 0 0 30px;
@@ -2339,13 +2267,15 @@ body {
     }
     .team {
         .team__title {
-            margin-left: -370px;
+            left: 320px;
         }
         .team__description {
-            margin-left: 50px;
+            position: absolute;
+            top: 40px;
+            left: -110px;
         }
         .team__slider {
-            margin-left: -40px;
+            margin-left: -20px;
             .slider__item {
                 width: 260px;
                 margin: 0 0 0 33px;
@@ -2378,11 +2308,33 @@ body {
     .skills {
         h3 {
             font-size: 35px;
-            margin-left: -3px;
+            left: -183px;
         }
         .skills__desc {
             width: 300px;
             margin-left: -7px;
+        }
+        .skills__category {
+            left: 18px;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .team {
+        h2 {
+            margin-left: 380px;
+        }
+        .team__description {
+            margin-left: 170px;
+        }
+        .team__slider {
+            margin-left: -50px;
+        }
+    }
+    .skills {
+        .skills__desc {
+            margin-left: 149px;
         }
         .skills__category {
             margin-left: 70px;
